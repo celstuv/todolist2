@@ -1,16 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/header/header';
-import List from './component/body/list';
-import NumberList from './component/body/numberlist';
+import Header from './component/Header';
+import Category from './component/Category';
 
-
-const numbers = [1, 2, 3, 4, 5];
-function App() {
-  return (
-    <div className="App">
-      {/*<header className="App-header">
+{// function App() {
+//   return (
+//     <div className="App">
+      /*<header className="App-header">
       //   <img src={logo} className="App-logo" alt="logo" />
       //   <p>
       //     Edit <code>src/App.js</code> and save to reload.
@@ -23,14 +20,26 @@ function App() {
       //   >
       //     Learn React
       //   </a>
-      // </header>*/}
+      // </header>*/
+      // </div>
+      //)
+    //}
+//}
+    }
 
+class App extends Component {
 
-    <Header />
-    <List />
-    <NumberList numbers={numbers} />
-</div>
-  );
+  state = {
+    titre : "Ma Super ToDoList !"
+  }
+  render() {
+    return(
+      <div className='toto'>
+        <Header title={this.state.titre}/>
+        <Category />
+      </div>
+    );
+  }
 }
 
 export default App;
