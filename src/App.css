@@ -1,8 +1,44 @@
 .toto {
-  text-align: center;
+  background-color:;
+  width:600px;
+  padding:20px;
+  margin:5px auto;
+  border: 1px solid #81ecec;
 }
 
+.toto h1{
+  text-align: center;
+  background-color:;
+}
+.CategoryList{
+  width:400px;
+  background-color:;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 
+}
+.CategoryList li {
+  list-style-type: none;
+}
+
+input {
+  margin-right : 10px;
+}
+
+button {
+  margin-left:10%;
+}
+.Ajout{
+  margin:10px 5px 40px 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.Singlecategory{
+  background-color:;
+  margin: 10px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
    {

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CategoryList from './component/CategoryList';
 import Header from './component/Header';
-import Category from './component/Category';
 
 {// function App() {
 //   return (
@@ -35,8 +35,8 @@ class App extends Component {
   render() {
     return(
       <div className='toto'>
-        <Header title={this.state.titre}/>
-        <Category />
+        <Header title={this.state.titre} />
+        <CategoryList />
       </div>
     );
   }

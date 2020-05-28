@@ -3,7 +3,7 @@ import React from 'react';
 const TypeCategory = (props) => {
   return(
     <div>
-      <p>{props.children}</p>
+    <h2>{props.children}</h2>
     </div>
   );
 }
