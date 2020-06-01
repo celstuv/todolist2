@@ -49,17 +49,33 @@ const categoryList = [
 
 ]
 
+
 class CategoryList extends React.Component {
     // constructor(props){
     //     super(props)
     // }
+
+    state = {
+      tache: null
+    }
+
+    ajoutTache = (event) => {
+      event.preventDefault();
+      this.setState({
+        tache:" Nouvelle tâche"
+        })
+    }
+
   render(){
       const categoryArray = categoryList.map((category, index)=>{
-      return <SingleCategory title={category.title} taskList={category.taskList}/>
-      })
+      return <SingleCategory title={category.title} taskList={category.taskList} tache={this.ajoutTache}/>
+
+    })
+
   return (
     <div className="CategoryList">
      {categoryArray}
+     <p>{this.state.tache}</p>
     </div>
   );
 }

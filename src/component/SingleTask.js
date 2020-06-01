@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../SingleTask.css';
 
 class SingleTask extends React.Component {
 
@@ -21,7 +21,7 @@ class SingleTask extends React.Component {
     console.log(className);
 
   return (
-    <li className="{className}">
+    <li className={className}>
       <input type="checkbox" onChange={this.handleOnChange}/>
       {this.props.taskName}
 
